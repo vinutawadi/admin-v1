@@ -1,1 +1,57 @@
 /* You can add global styles to this file, and also import other style files */
+@import "assets/sass/bootstrap/_variables.scss";
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+/* font-awesome Icons*/
+$fa-font-path: "../node_modules/font-awesome/fonts";
+@import "~font-awesome/scss/font-awesome.scss";
+@import "assets/spinner/spinner.scss";
+
+
+body 
+    overflow-x: hidden;
+.ng-sidebar
+  pointer-events: auto
+  position: static !important
+  touch-action: inherit
+  will-change: initial
+  z-index: 99999999
+  overflow: hidden !important
+  width: 215px
+  background-color: #fff !important
+   
+.ng-sidebar__content[_ngcontent-c2]
+  overflow: auto
+  top: 0
+  z-index: 0 !important
+  bottom: auto !important
+  
+  
+   
+.ng-sidebar--left[_ngcontent-c3] 
+    bottom: 0
+    left: 0
+    top: 0
+    height: 100% !important
+    position: relative !important
+
+ng-sidebar-container
+    height: 100vh !important
+
+.theme-white .sidebar-panel.ng-sidebar
+  background: linear-gradient(154deg, red 0, #f06d06 100%) !important 
+  a
+    color: black
+
+.mode-boxed  
+    position: relative !important;
+    width: 1100px !important;
+    overflow: auto !important;
+    height: 100vh !important;
+    margin: 0 auto;
+
+
+.theme-dark .sidebar-panel.ng-sidebar 
+    background-color: #3a3f51 !important
+   
