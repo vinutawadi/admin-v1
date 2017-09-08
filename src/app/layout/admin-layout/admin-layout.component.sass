@@ -9,6 +9,7 @@
   margin-right: 1rem
   position: relative
   width: 2rem
+  padding: 9px 0px 2px 15px
   &:after
     background: #fff
     content: ""
@@ -19,11 +20,9 @@
     top: 50%
     width: 100%
 
-
 .navbar-static-top
   align-items: center
-  background: linear-gradient(154deg, #008fe2 0, #00b29c 100%)
-  box-shadow: 0 0.1em 1.5em rgba(84, 85, 85, 0.5)
+  background: linear-gradient(154deg, #00907B 0, #00B3F4 100%)
   color: #fff
   display: flex
   padding: 1em
@@ -95,6 +94,9 @@
     background-color: #fff
     margin: 0px !important
     width: 100%
+    &:focus
+        outline: none !important
+    
 a 
  color: gray !important
  text-decoration: none
@@ -110,7 +112,9 @@ a.menu
       top: 5px
       right: 10px
 
-a.menu:hover a.menu:focus, a.menur:active
+a.menu:hover,
+a.menu:focus,
+a.menu:active
   color: #009efb !important
   cursor: pointer  
 
@@ -213,7 +217,11 @@ li[_ngcontent-c1]
     height: 100vh !important;
     margin: 0 auto;
 
-
+.rotate-icon
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: calc(100% - 30px) !important
 
 
 

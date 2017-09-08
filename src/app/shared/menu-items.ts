@@ -20,83 +20,103 @@ import { Injectable } from '@angular/core';
   {
     "menu": "Components",
     "icon": "fa fa-compass",
+    "route": "/components",
     "list": [
       {
         "menu": "Alert",
-        "icon": "fa fa-exclamation-triangle"
+        "icon": "fa fa-exclamation-triangle",
+        "route": "/alert",
+        
       },
       {
         "menu": "Buttons",
-        "icon": "fa fa-bullseye"
+        "icon": "fa fa-bullseye",
+        "route": "/buttons"
       },
       {
         "menu": "Carousel",
-        "icon": "fa fa-caret-square-o-up"
+        "icon": "fa fa-caret-square-o-up",
+        "route": "/carousel"
       },
       {
         "menu": "Collapse",
-        "icon": "fa fa-compress"
+        "icon": "fa fa-compress",
+        "route": "/collapse"
       },
       {
         "menu": "Datepicker",
-        "icon": "fa fa-calendar"
+        "icon": "fa fa-calendar",
+        "route": "/datepicker"
       },
       {
         "menu": "Dropdown",
-        "icon": "fa fa-caret-square-o-down"
+        "icon": "fa fa-caret-square-o-down",
+        "route": "/dropdown"
       },
       {
         "menu": "Modal",
-        "icon": "fa fa-modx"
+        "icon": "fa fa-modx",
+        "route": "/modal"
       },
       {
         "menu": "Pagination",
-        "icon": "fa fa-pagelines"
+        "icon": "fa fa-pagelines",
+        "route": "/pagination"
       },
       {
         "menu": "Popover",
-        "icon": "fa fa-fire"
+        "icon": "fa fa-fire",
+        "route": "/popover"
       },
       {
         "menu": "Progressbar",
-        "icon": "fa fa-tasks"
+        "icon": "fa fa-tasks",
+        "route": "/progressbar"
       },
       {
         "menu": "Rating",
-        "icon": "fa fa-star-half-o"
+        "icon": "fa fa-star-half-o",
+        "route": "/rating"
       },
       {
         "menu": "Tab",
-        "icon": "fa fa-tablet"
+        "icon": "fa fa-tablet",
+        "route": "/tab"
       },
       {
         "menu": "Timepicker",
-        "icon": "fa fa-clock-o"
+        "icon": "fa fa-clock-o",
+        "route": "/timepicker"
       },
       {
         "menu": "Tooltip",
-        "icon": "fa fa-tripadvisor"
+        "icon": "fa fa-tripadvisor",
+        "route": "/tooltip"
       },
       {
         "menu": "Typeahead",
-        "icon": "fa fa-keyboard-o"
+        "icon": "fa fa-keyboard-o",
+        "route": "/typeahead"
       },
     ]
   },
    {
     "menu": "Inbox",
     "list": [],
-    "icon": "fa fa-inbox"
+    "icon": "fa fa-inbox",
+    "route": "/inbox"
   },
 {
     "menu": "Chat",
     "list": [],
-    "icon": "fa fa-comments-o"
+    "icon": "fa fa-comments-o",
+    "route":"/chat"
   },
   {
     "menu": "Calendar",
     "list": [],
-    "icon": "fa fa-calendar"
+    "icon": "fa fa-calendar",
+    "route":"/calendar"
   },
   {
     "menu": "Editor",

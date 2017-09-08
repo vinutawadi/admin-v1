@@ -24,22 +24,25 @@
 
     <div class="row folder-exp">
       <ul class="list-group sidebar-list">
-        <li class="list-group-item menu" *ngFor="let data of sideList">
+        <li class="list-group-item menu" [routerLink]="[data.route]"  *ngFor="let data of sideList">
           <span class="{{data.icon}} menufont"></span>
           <i class="{{data.menu}}"></i>
-          <a href="#" class="menu" (click)="dropdown(data)">{{data.menu}}
-                     <i class="icon" [class.close]="!data.isOpen" [ngClass]="{'fa fa-angle-down':data.list.length>0}" aria-hidden="false"></i>
-              </a>
+          <a  href="javascript:void(0);" class="menu rotate-icon" (click)="dropdown(data)">{{data.menu}}
+              <i class="icon" [class.close]="!data.isOpen" [ngClass]="{'fa fa-angle-down':data.list.length>0}" aria-hidden="false"></i>
+          </a>
           <ul class="sublist" *ngIf="data.isOpen">
-            <li class="list-group-item menu" *ngFor="let list of data.list">
+            <li class="list-group-item menu" [routerLink]="[list.route]"  *ngFor="let list of data.list">
               <i class="{{list.menu}}"></i>
-              <a href="#" class="menu" (click)="dropdown1(list)">{{list.menu}}</a>
+              <a href="javascript:void(0);" class="menu">{{list.menu}}</a>
+
               <ul class="sublist1" *ngIf="list.Open">
                 <li class="list-group-item menu" *ngFor="let list1 of list.list1">
                   <span (click)="dropdown2(list1)">{{list1.menu}}</span>
+
                   <ul class="sublist1" *ngIf="list1.Open">
                     <li class="list-group-item menu" *ngFor="let list2 of list1.list2">
                       <span (click)="dropdown3(list2)">{{list2.menu}}</span>
+
                       <ul class="sublist1" *ngIf="list2.Open">
                         <li class="list-group-item menu" *ngFor="let list3 of list2.list3">
                           <span>{{list3.menu}}</span>
@@ -70,7 +73,13 @@
       </div>
     </div>
   </nav>
-
+  <div class="right-sidebar ">
+    <div class="folder-exp">
+      <div style="margin:25px">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+</div>
 </div>
 
 </ng-sidebar-container>
