@@ -3,7 +3,7 @@ import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { routing } from   '../components.routing'
+import { routing } from   './alert.routing'
 import { AlertComponent } from './alert.component';
 
 

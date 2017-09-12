@@ -24,8 +24,8 @@ export const appRoutes: Routes = [
         loadChildren: './calendar/calendar.module#CalendarModule'
       },
       {
-        path: 'components',
-        loadChildren: './components/components.module#ComponentsModule'
+        path: 'alert',
+        loadChildren: './components/alert/alert.module#AlertModule'
         
       },
 
